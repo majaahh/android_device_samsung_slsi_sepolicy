@@ -88,6 +88,9 @@
 /dev/sec-nfc                                                                                   u:object_r:nfc_device:s0
 /dev/st21nfc                                                                                   u:object_r:nfc_device:s0
 
+# NFC - eSE
+/dev/p3                                                                                        u:object_r:secure_element_device:s0
+
 # Partitions
 /dev/block/platform/.+/by-name/(boot|BOOT)                                                     u:object_r:boot_block_device:s0
 /dev/block/platform/.+/by-name/(cache|CACHE)                                                   u:object_r:cache_block_device:s0
@@ -181,6 +184,7 @@
 /vendor/bin/hw/android.hardware.nfc-service.sec                                                u:object_r:hal_nfc_default_exec:s0
 /vendor/bin/hw/android.hardware.nfc-service.st                                                 u:object_r:hal_nfc_default_exec:s0
 /vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr                                 u:object_r:hal_power_default_exec:s0
+/vendor/bin/hw/android.hardware.secure_element-service.thales-st33                             u:object_r:hal_secure_element_default_exec:s0
 /vendor/bin/hw/android.hardware.security.keymint-service.samsung                               u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/android.hardware.sensors-service.samsung-multihal                               u:object_r:hal_sensors_default_exec:s0
 /vendor/bin/hw/android.hardware.thermal-service.pixel                                          u:object_r:hal_thermal_default_exec:s0
