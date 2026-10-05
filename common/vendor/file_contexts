@@ -46,6 +46,7 @@
 /dev/caminfo                                 u:object_r:camera_device:s0
 /dev/dri(/.*)?                               u:object_r:gpu_device:s0
 /dev/goodix_fp                               u:object_r:fp_sensor_device:s0
+/dev/p3                                      u:object_r:secure_element_device:s0
 /dev/shub_data_injection                     u:object_r:ssp_device:s0
 /dev/shub_sensorhub                          u:object_r:ssp_device:s0
 /dev/ssp_sensorhub                           u:object_r:ssp_device:s0
@@ -189,6 +190,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@[0-9]\.[0-9]-service\.eden-drv   u:object_r:hal_neuralnetworks_eden_drv_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@[0-9].[0-9]-service\.exynos               u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power(@[0-9]\.[0-9])?-service\.pixel-libperfmgr u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element-service\.thales-st33             u:object_r:hal_secure_element_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.samsung              u:object_r:hal_keymint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal(@[0-9].[0-9])?-service\.exynos          u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal-service\.pixel                          u:object_r:hal_thermal_default_exec:s0
