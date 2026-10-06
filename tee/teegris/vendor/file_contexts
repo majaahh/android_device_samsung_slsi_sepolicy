@@ -16,8 +16,8 @@
 /dev/tziwsock                                                                   u:object_r:tz_user_device:s0
 
 # VENDOR
-/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.teegris   u:object_r:hal_gatekeeper_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android.hardware.gatekeeper-service.teegris      u:object_r:hal_gatekeeper_default_exec:s0
 /(vendor|system/vendor)/bin/tzdaemon                                            u:object_r:tzdaemon_exec:s0
 /(vendor|system/vendor)/bin/tzts_daemon                                         u:object_r:tztsdaemon_exec:s0
 
-/(vendor|system/vendor)/lib(64)?/libteecl\.so                                   u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/libteecl.so                                    u:object_r:same_process_hal_file:s0
