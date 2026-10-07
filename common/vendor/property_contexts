@@ -4,25 +4,25 @@
 #
 
 # GNSS
-vendor.gnss.                   u:object_r:vendor_gnss_prop:s0
+vendor.gnss.                              u:object_r:vendor_gnss_prop:s0
 
 # HWC
-persist.vendor.display.        u:object_r:vendor_hwc_prop:s0
-vendor.display.                u:object_r:vendor_hwc_prop:s0
+persist.vendor.display.                   u:object_r:vendor_hwc_prop:s0
+vendor.display.                           u:object_r:vendor_hwc_prop:s0
 
 # RIL
-persist.vendor.cbd.            u:object_r:vendor_radio_prop:s0
-ro.vendor.multisim.            u:object_r:vendor_radio_prop:s0
-ro.vendor.radio.               u:object_r:vendor_radio_prop:s0
-vendor.cbd.                    u:object_r:vendor_cbd_prop:s0
+persist.vendor.cbd.                       u:object_r:vendor_radio_prop:s0
+ro.vendor.multisim.                       u:object_r:vendor_radio_prop:s0
+ro.vendor.radio.                          u:object_r:vendor_radio_prop:s0
+vendor.cbd.                               u:object_r:vendor_cbd_prop:s0
 
 # Thermal
-vendor.thermal.                u:object_r:vendor_thermal_prop:s0
+vendor.thermal.                           u:object_r:vendor_thermal_prop:s0
 
 # Vaultkeeper
-ro.vendor.security.vaultkeeper u:object_r:vendor_vaultkeeper_prop:s0
-vendor.security.vaultkeeper    u:object_r:vendor_vaultkeeper_prop:s0
+ro.vendor.security.vaultkeeper            u:object_r:vendor_vaultkeeper_prop:s0
+vendor.security.vaultkeeper               u:object_r:vendor_vaultkeeper_prop:s0
 
 # Wi-Fi
-vendor.wifi.                   u:object_r:vendor_wifi_prop:s0
-ro.vendor.wifi.                u:object_r:vendor_wifi_prop:s0
+vendor.wifi.                              u:object_r:vendor_wifi_prop:s0
+ro.vendor.wifi.                           u:object_r:vendor_wifi_prop:s0
