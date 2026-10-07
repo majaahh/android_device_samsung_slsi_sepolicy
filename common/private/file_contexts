@@ -1,2 +1,7 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 ### DATA
 /data/zram(/.*)?                             u:object_r:zram_data_file:s0

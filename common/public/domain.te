@@ -1,2 +1,7 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # Make sure that labels are used correctly
 neverallow { domain -vendor_init -ueventd } r_fs_type:file write;

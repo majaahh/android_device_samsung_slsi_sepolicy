@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 type hal_drm_clearkey, domain;
 hal_server_domain(hal_drm_clearkey, hal_drm);
 

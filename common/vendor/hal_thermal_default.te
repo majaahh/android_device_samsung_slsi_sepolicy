@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # /acct/tasks
 allow hal_thermal_default cgroup:file getattr;
 

@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # ro.rfkilldisabled
 get_prop(hal_bluetooth_default, rfkilldisabled_prop)
 # vendor.bluetooth_fw_ver

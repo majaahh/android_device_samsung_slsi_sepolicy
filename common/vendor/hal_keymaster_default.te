@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # /mnt/vendor
 allow hal_keymaster_default mnt_vendor_file:dir search;
 

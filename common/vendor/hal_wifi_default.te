@@ -1,2 +1,7 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # Needed for wifi hotspot to read sap interface
 get_prop(hal_wifi_default, vendor_wifi_prop)

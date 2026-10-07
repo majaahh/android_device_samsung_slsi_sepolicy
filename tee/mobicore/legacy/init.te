@@ -1,2 +1,7 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # /dev/mobicore, /dev/t-base-tui
 allow init tee_device:chr_file rw_file_perms;

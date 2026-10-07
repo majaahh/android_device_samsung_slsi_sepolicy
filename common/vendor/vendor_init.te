@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # S Pen
 allow vendor_init efs_file:dir rw_dir_perms;
 allow vendor_init spen_efs_file:dir create_dir_perms;

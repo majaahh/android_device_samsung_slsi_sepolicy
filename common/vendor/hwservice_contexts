@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 vendor.samsung.hardware.biometrics.fingerprint::ISecBiometricsFingerprint u:object_r:hal_vendor_fingerprint_hwservice:s0
 vendor.samsung.hardware.radio.bridge::ISehBridge                     u:object_r:hal_telephony_hwservice:s0
 vendor.samsung.hardware.radio.channel::ISehChannel                   u:object_r:hal_telephony_hwservice:s0

@@ -1,2 +1,7 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 type hal_tee_hwservice, hwservice_manager_type;
 type hal_teeregistry_hwservice, hwservice_manager_type;
