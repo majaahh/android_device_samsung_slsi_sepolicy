@@ -1,4 +1,3 @@
-# property.te
 vendor_internal_prop(vendor_secureos_prop)
 vendor_internal_prop(vendor_tzdaemon_prop)
 vendor_internal_prop(vendor_tztsdaemon_prop)

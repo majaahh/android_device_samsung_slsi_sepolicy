@@ -1,5 +1,3 @@
-# hal_fingerprint_default.te
-
 add_hwservice(hal_fingerprint_default, hal_vendor_fingerprint_hwservice)
 
 # /dev/esfp[0-9]

@@ -1,5 +1,3 @@
-# file_contexts
-
 ### DATA
 /data/vendor/biometrics(/.*)?                u:object_r:biometrics_vendor_data_file:s0
 /data/vendor/conn(/.*)?                      u:object_r:conn_vendor_data_file:s0

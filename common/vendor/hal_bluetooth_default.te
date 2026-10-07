@@ -1,5 +1,3 @@
-# hal_bluetooth_default.te
-
 # ro.rfkilldisabled
 get_prop(hal_bluetooth_default, rfkilldisabled_prop)
 # vendor.bluetooth_fw_ver

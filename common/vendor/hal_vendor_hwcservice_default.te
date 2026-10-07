@@ -1,5 +1,3 @@
-# hal_vendor_hwcservice_default.te
-
 type hal_vendor_hwcservice_default, domain;
 hal_client_domain(hal_vendor_hwcservice_default, hal_graphics_composer)
 
