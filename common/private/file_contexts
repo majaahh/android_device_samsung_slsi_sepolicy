@@ -3,5 +3,5 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-### DATA
+# Data
 /data/zram(/.*)?                             u:object_r:zram_data_file:s0

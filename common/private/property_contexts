@@ -3,28 +3,28 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-### BLUETOOTH
+# Bluetooth
 sys.bluetooth.tty                            u:object_r:exported_bluetooth_prop:s0
 
-### CAMERA
+# Camera
 system.camera.CC.                            u:object_r:exported_camera_prop:s0
 service.camera.                              u:object_r:exported_camera_prop:s0
 sys.cameramode.                              u:object_r:exported_camera_prop:s0
 ro.camera.req.fmq.size                       u:object_r:exported_camera_prop:s0
 ro.camera.res.fmq.size                       u:object_r:exported_camera_prop:s0
 
-### CSC
+# CSC
 ro.csc.                                      u:object_r:exported_config_prop:s0
 
-### MDC
+# MDC
 mdc.                                         u:object_r:exported_config_prop:s0
 
-### OMC
+# OMC
 persist.sys.omc_support                      u:object_r:exported_config_prop:s0
 persist.sys.omc_etcpath                      u:object_r:exported_config_prop:s0
 ro.omc.                                      u:object_r:exported_config_prop:s0
 
-### RADIO
+# RIL
 ril.NwNmId                                   u:object_r:telephony_config_prop:s0
 ril.NwNmId2                                  u:object_r:telephony_config_prop:s0
 ro.boot.cpboot                               u:object_r:telephony_config_prop:s0
@@ -32,5 +32,5 @@ ro.multisim.                                 u:object_r:radio_prop:s0
 ro.simbased.changetype                       u:object_r:telephony_config_prop:s0
 ro.telephony.sim_slots.count                 u:object_r:radio_prop:s0
 
-### RFKILL
+# RFKill
 ro.rfkilldisabled                            u:object_r:rfkilldisabled_prop:s0
