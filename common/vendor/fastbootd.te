@@ -1,5 +1,3 @@
-# fastbootd.te
-
 allow fastbootd {
     boot_block_device
     dtbo_block_device

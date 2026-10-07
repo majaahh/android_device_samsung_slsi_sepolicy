@@ -1,5 +1,3 @@
-# hal_gnss_default.te
-
 # cgroups tasks
 allow hal_gnss_default cgroup:file getattr;
 

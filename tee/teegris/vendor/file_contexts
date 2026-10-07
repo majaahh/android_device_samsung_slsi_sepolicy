@@ -1,5 +1,3 @@
-# file_contexts
-
 # DATA
 /data/vendor/tee(/.*)?                                                          u:object_r:tee_vendor_data_file:s0
 

@@ -1,5 +1,3 @@
-# hal_thermal_default.te
-
 # /acct/tasks
 allow hal_thermal_default cgroup:file getattr;
 

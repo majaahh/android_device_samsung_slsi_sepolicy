@@ -1,5 +1,3 @@
-# property_contexts
-
 # TEEGRIS
 vendor.secureos.               u:object_r:vendor_secureos_prop:s0
 vendor.tzdaemon                u:object_r:vendor_tzdaemon_prop:s0
