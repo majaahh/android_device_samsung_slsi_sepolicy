@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 add_hwservice(hal_fingerprint_default, hal_vendor_fingerprint_hwservice)
 
 # /dev/esfp[0-9]

@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 type hal_samsung_spen_default, domain;
 hal_server_domain(hal_samsung_spen_default, hal_samsung_spen)
 

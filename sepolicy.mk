@@ -1,4 +1,9 @@
 #
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+#
 # This policy configuration will be used by samsung products
 #
 

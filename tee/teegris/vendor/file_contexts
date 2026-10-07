@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # DATA
 /data/vendor/tee(/.*)?                                                          u:object_r:tee_vendor_data_file:s0
 

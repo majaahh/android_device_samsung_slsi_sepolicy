@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 type cass, domain;
 type cass_exec, exec_type, file_type, vendor_file_type;
 

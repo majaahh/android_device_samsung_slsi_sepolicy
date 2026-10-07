@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # /dev/cpu_dma_latency
 allow hal_power_default cpu_dma_device:chr_file rw_file_perms;
 

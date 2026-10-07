@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 type tztsdaemon, domain;
 type tztsdaemon_exec, exec_type, vendor_file_type, file_type;
 

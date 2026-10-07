@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 vendor.samsung.hardware.keymint.ISehKeyMintExtension/default        u:object_r:hal_keymint_service:s0
 vendor.samsung.hardware.keymint.ISehKeyMintFactory/default          u:object_r:hal_keymint_service:s0
 

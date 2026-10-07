@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 hal_attribute(samsung_spen)
 
 # HWBinder IPC from client to server
