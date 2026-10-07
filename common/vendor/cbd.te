@@ -7,9 +7,9 @@ type cbd, domain;
 type cbd_exec, exec_type, vendor_file_type, file_type;
 
 allow cbd self:capability setuid;
-
-# cbd is started by init, type transit from init domain to cbd domain
+get_prop(cbd, vendor_radio_prop)
 init_daemon_domain(cbd)
+vndbinder_use(cbd)
 
 # /dev/block/
 allow cbd block_device:dir search;
@@ -64,7 +64,3 @@ set_prop(cbd, vendor_cbd_prop)
 # FIXME: Can we be more specific?
 allow cbd vendor_shell_exec:file execute_no_trans;
 # FIXME END
-
-vndbinder_use(cbd)
-
-get_prop(cbd, vendor_radio_prop)

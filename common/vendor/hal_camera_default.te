@@ -3,10 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-allow hal_camera_default {
-    data_eden_file
-    sysfs_npu_version
-}:dir r_dir_perms;
-
+allow hal_camera_default { data_eden_file sysfs_npu_version }:dir r_dir_perms;
 allow hal_camera_default npu_device:chr_file rw_file_perms;
 allow hal_camera_default sysfs_npu_version:file r_file_perms;

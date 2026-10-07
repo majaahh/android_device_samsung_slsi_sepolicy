@@ -3,20 +3,35 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-### DATA
+# Argos
+type sysfs_argos, sysfs_type, r_fs_type, fs_type;
+
+# Battery
+type sysfs_battery, sysfs_type, r_fs_type, fs_type;
+type sysfs_sec_switch, sysfs_type, r_fs_type, fs_type;
+type sysfs_sec_switch_writable, sysfs_type, rw_fs_type, fs_type;
+
+# Bluetooth
+type sysfs_bt_writable, sysfs_type, rw_fs_type, fs_type;
+
+# Data
 type biometrics_vendor_data_file, file_type, data_file_type;
 type conn_vendor_data_file, file_type, data_file_type;
 type data_eden_file, file_type, data_file_type;
 type data_eden_gpu_file, file_type, data_file_type;
 type display_vendor_data_file, file_type, data_file_type;
 type gps_vendor_data_file, file_type, data_file_type;
-type log_vendor_data_file, file_type, data_file_type;
 type log_cbd_vendor_data_file, file_type, data_file_type;
+type log_vendor_data_file, file_type, data_file_type;
 type npu_vendor_data_file, file_type, data_file_type;
 type radio_vendor_data_file, file_type, data_file_type;
-type sysfs_npu_version, sysfs_type, r_fs_type, fs_type;
 type thermal_vendor_data_file, file_type, data_file_type;
 type wifi_vendor_data_file, file_type, data_file_type;
+
+# Display
+type sysfs_backlight_writable, sysfs_type, rw_fs_type, fs_type;
+type sysfs_battery_writable, sysfs_type, rw_fs_type, fs_type;
+type sysfs_lcd_writable, sysfs_type, rw_fs_type, fs_type;
 
 # EFS
 type app_efs_file, file_type;
@@ -32,45 +47,63 @@ type spen_efs_file, file_type;
 type tee_efs_file, file_type;
 type wifi_efs_file, file_type;
 
-# PROC
+# EPIC
+type epicd_socket, file_type, data_file_type;
+
+# Fingerprint
+type sysfs_fingerprint, sysfs_type, r_fs_type, fs_type;
+
+# Firmware
+type vendor_firmware_file, file_type, vendor_file_type;
+
+# GNSS
+type sysfs_bbd, sysfs_type, r_fs_type, fs_type;
+type sysfs_gps_writable, sysfs_type, rw_fs_type, fs_type;
+type sysfs_sec_gps, sysfs_type, r_fs_type, fs_type;
+
+# IIO
+type sysfs_iio, sysfs_type, r_fs_type, fs_type;
+
+# Input
+type sysfs_input, sysfs_type, r_fs_type, fs_type;
+
+# Kernel
 type proc_last_kmsg, fs_type, proc_type;
 
-# SOCKETS
-type epicd_socket, file_type, data_file_type;
+# Key
+type sysfs_sec_key, sysfs_type, r_fs_type, fs_type;
+
+# Neural Networks
+type sysfs_npu_version, sysfs_type, r_fs_type, fs_type;
+type vendor_eden_gpu_vendor_file, file_type, vendor_file_type;
+
+# Power
+type sysfs_power_writable, sysfs_type, rw_fs_type, fs_type;
+
+# RIL
+type sysfs_sim, sysfs_type, r_fs_type, fs_type;
+type sysfs_sim_writable, sysfs_type, rw_fs_type, fs_type;
+
+# S Pen
+type sysfs_spen, sysfs_type, rw_fs_type, fs_type;
+
+# SCSI
+type sysfs_scsi_host_writable, sysfs_type, rw_fs_type, fs_type;
+
+# Sensors
+type sysfs_sec_sensors, sysfs_type, r_fs_type, fs_type;
+type sysfs_sensorhub_writable, sysfs_type, rw_fs_type, fs_type;
+type sysfs_sensors, sysfs_type, r_fs_type, fs_type;
+type sysfs_sensors_writable, sysfs_type, rw_fs_type, fs_type;
+type sysfs_spi_writeable, sysfs_type, rw_fs_type, fs_type;
+
+# Touchscreen
+type sysfs_sec_touchscreen, sysfs_type, r_fs_type, fs_type;
+type sysfs_touchscreen_writable, sysfs_type, rw_fs_type, fs_type;
+
+# Vaultkeeper
 type vaultkeeperd_socket, file_type, data_file_type;
 
-### SYSFS
-type sysfs_argos, sysfs_type, r_fs_type, fs_type;
-type sysfs_battery, sysfs_type, r_fs_type, fs_type;
-type sysfs_bbd, sysfs_type, r_fs_type, fs_type;
-type sysfs_fingerprint, sysfs_type, r_fs_type, fs_type;
-type sysfs_iio, sysfs_type, r_fs_type, fs_type;
-type sysfs_input, sysfs_type, r_fs_type, fs_type;
-type sysfs_sec_gps, sysfs_type, r_fs_type, fs_type;
-type sysfs_sec_key, sysfs_type, r_fs_type, fs_type;
-type sysfs_sec_sensors, sysfs_type, r_fs_type, fs_type;
-type sysfs_sec_switch, sysfs_type, r_fs_type, fs_type;
-type sysfs_sec_touchscreen, sysfs_type, r_fs_type, fs_type;
-type sysfs_sim, sysfs_type, r_fs_type, fs_type;
-type sysfs_sensors, sysfs_type, r_fs_type, fs_type;
-type sysfs_spen, sysfs_type, rw_fs_type, fs_type;
+# Wi-Fi
 type sysfs_wifi, sysfs_type, r_fs_type, fs_type;
-
-type sysfs_backlight_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_battery_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_bt_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_gps_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_lcd_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_power_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_scsi_host_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_sensorhub_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_sensors_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_sim_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_spi_writeable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_sec_switch_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_touchscreen_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_wifi_writable, sysfs_type, rw_fs_type, fs_type;
-
-### VENDOR
-type vendor_eden_gpu_vendor_file, file_type, vendor_file_type;
-type vendor_firmware_file, file_type, vendor_file_type;

@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# DATA
+# Data
 type tee_vendor_data_file, file_type, data_file_type;
 
-# DEV SOCKET
+# TEEGRIS
 type tz_socket, file_type;

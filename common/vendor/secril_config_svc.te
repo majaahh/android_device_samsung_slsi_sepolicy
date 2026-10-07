@@ -6,9 +6,7 @@
 type secril_config_svc, domain, halserverdomain, hal_telephony, hal_telephony_server;
 type secril_config_svc_exec, exec_type, vendor_file_type, file_type;
 
-# secril_config_svc is started by init, type transit from init domain to secril_config_svc domain
 init_daemon_domain(secril_config_svc)
-
 unix_socket_connect(secril_config_svc, property, init)
 
 # /mnt/vendor/
