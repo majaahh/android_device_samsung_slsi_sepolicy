@@ -11,6 +11,10 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/samsung_slsi/sepolicy/common/vendor
 
+ifneq ($(filter s5e%,$(TARGET_SOC)),)
+BOARD_SEPOLICY_TEE_FLAVOR ?= teegris
+endif
+
 ifeq ($(BOARD_SEPOLICY_TEE_FLAVOR),teegris)
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     device/samsung_slsi/sepolicy/tee/teegris/public
