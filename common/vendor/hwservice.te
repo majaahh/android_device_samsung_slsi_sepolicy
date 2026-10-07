@@ -3,8 +3,5 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Fingerprint
-type hal_vendor_fingerprint_hwservice, hwservice_manager_type;
-
 # Neural Networks
 type hal_vendor_eden_runtime_hwservice, hwservice_manager_type;

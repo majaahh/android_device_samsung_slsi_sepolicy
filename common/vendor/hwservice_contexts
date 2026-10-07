@@ -3,9 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Fingerprint
-vendor.samsung.hardware.biometrics.fingerprint::ISecBiometricsFingerprint    u:object_r:hal_vendor_fingerprint_hwservice:s0
-
 # Neural Networks
 vendor.samsung_slsi.hardware.eden_runtime::IEdenruntime                      u:object_r:hal_vendor_eden_runtime_hwservice:s0
 
