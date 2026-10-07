@@ -3,10 +3,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# DATA
+# Data
 /data/vendor/tee(/.*)?                                                          u:object_r:tee_vendor_data_file:s0
 
-# DEV
+# TEEGRIS
 /dev/socket/tz                                                                  u:object_r:tz_socket:s0
 /dev/tuihw                                                                      u:object_r:tz_device:s0
 /dev/tzdev                                                                      u:object_r:tz_user_device:s0
@@ -14,10 +14,10 @@
 /dev/tzirs                                                                      u:object_r:tz_device:s0
 /dev/tziwshmem                                                                  u:object_r:tz_user_device:s0
 /dev/tziwsock                                                                   u:object_r:tz_user_device:s0
+/vendor/lib(64)?/libteecl.so                                                    u:object_r:same_process_hal_file:s0
 
-# VENDOR
-/vendor/bin/hw/android.hardware.gatekeeper-service.teegris                      u:object_r:hal_gatekeeper_default_exec:s0
+# Vendor Services
 /vendor/bin/tzdaemon                                                            u:object_r:tzdaemon_exec:s0
 /vendor/bin/tzts_daemon                                                         u:object_r:tztsdaemon_exec:s0
 
-/vendor/lib(64)?/libteecl.so                                                    u:object_r:same_process_hal_file:s0
+/vendor/bin/hw/android.hardware.gatekeeper-service.teegris                      u:object_r:hal_gatekeeper_default_exec:s0

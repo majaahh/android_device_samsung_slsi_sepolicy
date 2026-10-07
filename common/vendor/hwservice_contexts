@@ -3,10 +3,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# ConfigStore
+vendor.samsung_slsi.hardware.configstore::IExynosHWCConfigs          u:object_r:hal_vendor_configstore_hwservice:s0
+
+# Exynos HWC
+vendor.samsung_slsi.hardware.ExynosHWCServiceTW::IExynosHWCServiceTW u:object_r:hal_vendor_surfaceflinger_hwservice:s0
+
+# Fingerprint
 vendor.samsung.hardware.biometrics.fingerprint::ISecBiometricsFingerprint u:object_r:hal_vendor_fingerprint_hwservice:s0
+
+# Neural Networks
+vendor.samsung_slsi.hardware.eden_runtime::IEdenruntime              u:object_r:hal_vendor_eden_runtime_hwservice:s0
+
+# RIL
 vendor.samsung.hardware.radio.bridge::ISehBridge                     u:object_r:hal_telephony_hwservice:s0
 vendor.samsung.hardware.radio.channel::ISehChannel                   u:object_r:hal_telephony_hwservice:s0
 vendor.samsung.hardware.radio::ISehRadio                             u:object_r:hal_telephony_hwservice:s0
-vendor.samsung_slsi.hardware.ExynosHWCServiceTW::IExynosHWCServiceTW u:object_r:hal_vendor_surfaceflinger_hwservice:s0
-vendor.samsung_slsi.hardware.configstore::IExynosHWCConfigs          u:object_r:hal_vendor_configstore_hwservice:s0
-vendor.samsung_slsi.hardware.eden_runtime::IEdenruntime              u:object_r:hal_vendor_eden_runtime_hwservice:s0
