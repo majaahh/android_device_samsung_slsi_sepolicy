@@ -3,16 +3,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-get_prop(rild, vendor_radio_prop)
-
 allow rild block_device:dir search;
 allow rild mnt_vendor_file:dir { getattr search };
+get_prop(rild, vendor_radio_prop)
 
-# audio hal
+# Audio
 allow rild hal_audio_default:dir search;
 allow rild hal_audio_default:file r_file_perms;
 
-# gps
+# GNSS
 allow rild gpsd:dir search;
 allow rild gpsd:file r_file_perms;
 

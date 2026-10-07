@@ -6,17 +6,14 @@
 type lhd, domain;
 type lhd_exec, exec_type, vendor_file_type, file_type;
 
-# lhd is started by init, type transit from init domain to lhd domain
-init_daemon_domain(lhd)
-
-get_prop(lhd, hwservicemanager_prop)
-hwbinder_use(lhd)
+allow lhd node:tcp_socket node_bind;
+allow lhd port:tcp_socket { name_bind name_connect };
+allow lhd self:tcp_socket create_stream_socket_perms;
 allow lhd system_suspend_hwservice:hwservice_manager { find };
 binder_call(lhd, system_suspend_server)
-
-allow lhd self:tcp_socket create_stream_socket_perms;
-allow lhd port:tcp_socket { name_bind name_connect };
-allow lhd node:tcp_socket node_bind;
+get_prop(lhd, hwservicemanager_prop)
+hwbinder_use(lhd)
+init_daemon_domain(lhd)
 
 # /data/vendor/gps
 allow lhd gps_vendor_data_file:dir rw_dir_perms;

@@ -6,13 +6,10 @@
 type cass, domain;
 type cass_exec, exec_type, file_type, vendor_file_type;
 
-init_daemon_domain(cass)
-
 allow cass kmsg_device:chr_file getattr;
-allow cass vendor_radio_device:chr_file rw_file_perms;
-
-wakelock_use(cass)
-get_prop(cass, vendor_vaultkeeper_prop)
-
 allow cass vaultkeeperd_socket:dir search;
+allow cass vendor_radio_device:chr_file rw_file_perms;
+get_prop(cass, vendor_vaultkeeper_prop)
+init_daemon_domain(cass)
 unix_socket_connect(cass, vaultkeeperd, vaultkeeperd)
+wakelock_use(cass)

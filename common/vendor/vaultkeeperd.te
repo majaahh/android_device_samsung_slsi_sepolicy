@@ -6,14 +6,11 @@
 type vaultkeeperd, domain;
 type vaultkeeperd_exec, exec_type, file_type, vendor_file_type;
 
-init_daemon_domain(vaultkeeperd)
-
-allow vaultkeeperd kmsg_device:chr_file getattr;
 allow vaultkeeperd block_device:dir search;
-allow vaultkeeperd steady_block_device:blk_file rw_file_perms;
-
-set_prop(vaultkeeperd, vendor_vaultkeeper_prop)
-
+allow vaultkeeperd kmsg_device:chr_file getattr;
 allow vaultkeeperd socket_device:dir w_dir_perms;
+allow vaultkeeperd steady_block_device:blk_file rw_file_perms;
 allow vaultkeeperd vaultkeeperd_socket:dir rw_dir_perms;
 allow vaultkeeperd vaultkeeperd_socket:sock_file create_file_perms;
+init_daemon_domain(vaultkeeperd)
+set_prop(vaultkeeperd, vendor_vaultkeeper_prop)

@@ -3,5 +3,5 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-### RFKILL
+# RFKill
 vendor_public_prop(rfkilldisabled_prop)
