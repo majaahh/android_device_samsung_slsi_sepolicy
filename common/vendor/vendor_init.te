@@ -3,6 +3,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+allow vendor_init cgroup:file getattr;
+allow vendor_init proc_sched:file write;
+get_prop(vendor_init, vendor_radio_prop)
+set_prop(vendor_init, vendor_cbd_prop)
+
 # S Pen
 allow vendor_init efs_file:dir rw_dir_perms;
 allow vendor_init spen_efs_file:dir create_dir_perms;
