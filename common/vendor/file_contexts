@@ -157,6 +157,10 @@
 /dev/shub_data_injection                                                                       u:object_r:ssp_device:s0
 /dev/shub_sensorhub                                                                            u:object_r:ssp_device:s0
 /dev/ssp_sensorhub                                                                             u:object_r:ssp_device:s0
+/sys/devices/platform/shub/iio:device[0-9]+/buffer/data_available                              u:object_r:sysfs_sensors_writable:s0
+/sys/devices/platform/shub/iio:device[0-9]+/buffer/enable                                      u:object_r:sysfs_sensors_writable:s0
+/sys/devices/platform/shub/iio:device[0-9]+/buffer/length                                      u:object_r:sysfs_sensors_writable:s0
+/sys/devices/platform/shub/iio:device[0-9]+/name                                               u:object_r:sysfs_iio:s0
 
 # S Pen
 /sys/devices/virtual/sec/sec_epen(/.*)?                                                        u:object_r:sysfs_spen:s0
