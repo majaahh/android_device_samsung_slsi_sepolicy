@@ -13,7 +13,9 @@ vendor.display.                           u:object_r:vendor_hwc_prop:s0
 # RIL
 persist.vendor.cbd.                       u:object_r:vendor_radio_prop:s0
 ro.vendor.multisim.                       u:object_r:vendor_radio_prop:s0
+ro.vendor.multisim.simslotcount           u:object_r:vendor_radio_prop:s0
 ro.vendor.radio.                          u:object_r:vendor_radio_prop:s0
+ro.vendor.radio.default_network           u:object_r:vendor_radio_prop:s0
 vendor.cbd.                               u:object_r:vendor_cbd_prop:s0
 
 # Thermal
