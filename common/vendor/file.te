@@ -33,6 +33,10 @@ type sysfs_backlight_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_battery_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_lcd_writable, sysfs_type, rw_fs_type, fs_type;
 
+# DRM - Widevine
+type dmabuf_crypto_heap_device, dmabuf_heap_device_type, dev_type;
+type mediadrm_vendor_data_file, data_file_type, file_type;
+
 # EFS
 type app_efs_file, file_type;
 type battery_efs_file, file_type;
