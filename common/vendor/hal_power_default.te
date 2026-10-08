@@ -3,6 +3,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+allow hal_power_default pm_qos_device:chr_file { open write };
+allow hal_power_default sysfs_battery:dir search;
+allow hal_power_default sysfs_battery_writable:file { open write };
+allow hal_power_default sysfs_power_writable:file write;
+
 # /dev/cpu_dma_latency
 allow hal_power_default cpu_dma_device:chr_file rw_file_perms;
 
