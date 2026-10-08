@@ -14,6 +14,11 @@ type sysfs_sec_switch_writable, sysfs_type, rw_fs_type, fs_type;
 # Bluetooth
 type sysfs_bt_writable, sysfs_type, rw_fs_type, fs_type;
 
+# Camera
+type dmabuf_camera_heap_device, dmabuf_heap_device_type, dev_type;
+type sysfs_camera, sysfs_type, r_fs_type, fs_type;
+type sysfs_camera_writable, sysfs_type, rw_fs_type, fs_type;
+
 # Data
 type biometrics_vendor_data_file, file_type, data_file_type;
 type conn_vendor_data_file, file_type, data_file_type;

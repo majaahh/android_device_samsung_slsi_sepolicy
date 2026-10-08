@@ -3,6 +3,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Camera
+persist.vendor.camera.                    u:object_r:vendor_camera_prop:s0
+persist.vendor.sys.camera.                u:object_r:vendor_camera_prop:s0
+
 # GNSS
 vendor.gnss.                              u:object_r:vendor_gnss_prop:s0
 
