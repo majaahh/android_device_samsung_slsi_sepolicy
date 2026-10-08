@@ -6,6 +6,9 @@
 # DIT
 type dit_device, dev_type;
 
+# DRM - Widevine
+type vendor_secmem_device, dev_type;
+
 # GNSS
 type bbd_device, dev_type;
 type gps_device, dev_type;

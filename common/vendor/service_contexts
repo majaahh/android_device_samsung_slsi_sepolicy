@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# DRM - Widevine
+android.hardware.drm.IDrmFactory/widevine                           u:object_r:hal_drm_service:s0
+
 # KeyMint
 vendor.samsung.hardware.keymint.ISehKeyMintExtension/default        u:object_r:hal_keymint_service:s0
 vendor.samsung.hardware.keymint.ISehKeyMintFactory/default          u:object_r:hal_keymint_service:s0

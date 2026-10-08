@@ -19,12 +19,18 @@
 /data/vendor/gps(/.*)?                                                                         u:object_r:gps_vendor_data_file:s0
 /data/vendor/log(/.*)?                                                                         u:object_r:log_vendor_data_file:s0
 /data/vendor/log/cbd(/.*)?                                                                     u:object_r:log_cbd_vendor_data_file:s0
+/data/vendor/mediadrm(/.*)?                                                                    u:object_r:mediadrm_vendor_data_file:s0
 /data/vendor/secradio(/.*)?                                                                    u:object_r:radio_vendor_data_file:s0
 /data/vendor/thermal(/.*)?                                                                     u:object_r:thermal_vendor_data_file:s0
 /data/vendor/wifi(/.*)?                                                                        u:object_r:wifi_vendor_data_file:s0
 
 # DIT
 /dev/dit                                                                                       u:object_r:dit_device:s0
+
+# DRM - Widevine
+/dev/dma_heap/crypto                                                                           u:object_r:dmabuf_crypto_heap_device:s0
+/dev/dma_heap/crypto-uncached                                                                  u:object_r:dmabuf_crypto_heap_device:s0
+/dev/s5p-smem                                                                                  u:object_r:vendor_secmem_device:s0
 
 # EFS
 /efs/Battery(/.*)?                                                                             u:object_r:battery_efs_file:s0
