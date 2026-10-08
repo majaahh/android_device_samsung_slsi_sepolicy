@@ -14,6 +14,9 @@ type sysfs_sec_switch_writable, sysfs_type, rw_fs_type, fs_type;
 # Bluetooth
 type sysfs_bt_writable, sysfs_type, rw_fs_type, fs_type;
 
+# Block
+type sysfs_block_writable, sysfs_type, rw_fs_type, fs_type;
+
 # Camera
 type dmabuf_camera_heap_device, dmabuf_heap_device_type, dev_type;
 type sysfs_camera, sysfs_type, r_fs_type, fs_type;
