@@ -3,9 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# ConfigStore
-type hal_vendor_configstore_hwservice, hwservice_manager_type;
-
 # ExynosHWC
 type hal_vendor_surfaceflinger_hwservice, hwservice_manager_type;
 
