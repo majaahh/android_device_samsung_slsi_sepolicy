@@ -47,9 +47,6 @@ type spen_efs_file, file_type;
 type tee_efs_file, file_type;
 type wifi_efs_file, file_type;
 
-# EPIC
-type epicd_socket, file_type, data_file_type;
-
 # Fingerprint
 type sysfs_fingerprint, sysfs_type, r_fs_type, fs_type;
 

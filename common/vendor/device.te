@@ -9,9 +9,6 @@ type dit_device, dev_type;
 # GNSS
 type bbd_device, dev_type;
 
-# EPIC
-type epic_device, dev_type;
-
 # Fingerprint
 type fp_sensor_device, dev_type;
 

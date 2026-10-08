@@ -54,10 +54,6 @@
 /mnt/vendor/efs/tee(/.*)?                                                                      u:object_r:tee_efs_file:s0
 /mnt/vendor/efs/wifi(/.*)?                                                                     u:object_r:wifi_efs_file:s0
 
-# EPIC
-/dev/mode                                                                                      u:object_r:epic_device:s0
-/dev/socket/epic                                                                               u:object_r:epicd_socket:s0
-
 # Fingerprint
 /dev/esfp[0-9]                                                                                 u:object_r:fp_sensor_device:s0
 
