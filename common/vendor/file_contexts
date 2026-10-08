@@ -169,7 +169,6 @@
 /vendor/bin/hw/android.hardware.boot-service.exynos                                            u:object_r:hal_bootctl_default_exec:s0
 /vendor/bin/hw/android.hardware.camera.provider(@[0-9].[0-9])?-service(_32|_64)?.samsung       u:object_r:hal_camera_default_exec:s0
 /vendor/bin/hw/android.hardware.composer.hwc3-service.slsi                                     u:object_r:hal_graphics_composer_default_exec:s0
-/vendor/bin/hw/android.hardware.drm@[0-9].[0-9]-service.clearkey                               u:object_r:hal_drm_clearkey_exec:s0
 /vendor/bin/hw/android.hardware.drm@[0-9].[0-9]-service.widevine                               u:object_r:hal_drm_widevine_exec:s0
 /vendor/bin/hw/android.hardware.gatekeeper-service.samsung                                     u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/hw/android.hardware.health-service.samsung                                         u:object_r:hal_health_default_exec:s0
