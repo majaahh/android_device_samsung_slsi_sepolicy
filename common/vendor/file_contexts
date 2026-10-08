@@ -9,6 +9,8 @@
 
 # Camera
 /dev/caminfo                                                                                   u:object_r:camera_device:s0
+/dev/dma_heap/camera                                                                           u:object_r:dmabuf_camera_heap_device:s0
+/dev/dma_heap/camera-uncached                                                                  u:object_r:dmabuf_camera_heap_device:s0
 
 # Data
 /data/vendor/biometrics(/.*)?                                                                  u:object_r:biometrics_vendor_data_file:s0

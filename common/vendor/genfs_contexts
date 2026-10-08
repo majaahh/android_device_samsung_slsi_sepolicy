@@ -21,6 +21,18 @@ genfscon sysfs /devices/virtual/sec/switch/afc_disable                          
 # Bluetooth
 genfscon sysfs /module/scsc_bt/parameters/bluetooth_address                                                                   u:object_r:sysfs_bt_writable:s0
 
+# Camera
+genfscon sysfs /devices/virtual/camera/flash/rear_flash                                                                       u:object_r:sysfs_camera_writable:s0
+genfscon sysfs /devices/virtual/camera/ois/ois_exif                                                                           u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/camera/rear/fw_update                                                                         u:object_r:sysfs_camera_writable:s0
+genfscon sysfs /devices/virtual/camera/rear/rear2_sensorid_exif                                                               u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/camera/rear/rear3_sensorid_exif                                                               u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/camera/rear/rear_camfw                                                                        u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/camera/rear/rear_mtf_exif                                                                     u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/camera/rear/rear_sensorid_exif                                                                u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info                                                                  u:object_r:sysfs_camera_writable:s0
+genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                                                                               u:object_r:sysfs_camera_writable:s0
+
 # Display
 genfscon sysfs /class/backlight/                                                                                              u:object_r:sysfs_backlight_writable:s0
 genfscon sysfs /devices/platform/panel@0/backlight/panel/brightness                                                           u:object_r:sysfs_backlight_writable:s0
