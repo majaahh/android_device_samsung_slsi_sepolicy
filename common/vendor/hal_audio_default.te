@@ -1,0 +1,7 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+allow hal_audio_default hal_system_suspend_service:service_manager find;
+allow hal_audio_default rild:unix_stream_socket connectto;
