@@ -97,6 +97,9 @@ genfscon sysfs /devices/virtual/sensors/ssp_sensor/enable                       
 genfscon sysfs /devices/virtual/sensors/ssp_sensor/shub_file                                                                  u:object_r:sysfs_sensors_writable:s0
 genfscon sysfs /devices/virtual/sensors/ssp_sensor/ssp_flush                                                                  u:object_r:sysfs_sensors_writable:s0
 
+# Swappiness
+genfscon proc /sys/vm/swappiness                                                                                              u:object_r:proc_swappiness:s0
+
 # Thermal
 genfscon sysfs /class/powercap                                                                                                u:object_r:sysfs_thermal:s0
 genfscon sysfs /class/thermal                                                                                                 u:object_r:sysfs_thermal:s0
