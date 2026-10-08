@@ -4,6 +4,7 @@
 #
 
 # Bluetooth
+/dev/scsc_h4_0                                                                                 u:object_r:bt_device:s0
 /dev/ttySAC[0-9]                                                                               u:object_r:bt_device:s0
 
 # Camera
