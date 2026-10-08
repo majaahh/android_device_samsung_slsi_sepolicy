@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+unix_socket_connect(hal_sensors_default, property, init)
+
 # /dev/batch_io
 allow hal_sensors_default io_device:chr_file r_file_perms;
 
