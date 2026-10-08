@@ -7,8 +7,9 @@ type cbd, domain;
 type cbd_exec, exec_type, vendor_file_type, file_type;
 
 allow cbd self:capability setuid;
-get_prop(cbd, vendor_radio_prop)
+allow cbd self:capability2 block_suspend;
 init_daemon_domain(cbd)
+set_prop(cbd, vendor_radio_prop)
 vndbinder_use(cbd)
 
 # /dev/block/

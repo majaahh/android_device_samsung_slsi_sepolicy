@@ -5,6 +5,9 @@
 
 allow rild block_device:dir search;
 allow rild mnt_vendor_file:dir { getattr search };
+dontaudit rild default_prop:file r_file_perms;
+dontaudit rild default_prop:property_service set;
+dontaudit rild system_prop:file r_file_perms;
 get_prop(rild, vendor_radio_prop)
 
 # Audio
