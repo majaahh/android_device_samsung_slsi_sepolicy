@@ -3,9 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Exynos HWC
-vendor.samsung_slsi.hardware.ExynosHWCServiceTW::IExynosHWCServiceTW         u:object_r:hal_vendor_surfaceflinger_hwservice:s0
-
 # Fingerprint
 vendor.samsung.hardware.biometrics.fingerprint::ISecBiometricsFingerprint    u:object_r:hal_vendor_fingerprint_hwservice:s0
 

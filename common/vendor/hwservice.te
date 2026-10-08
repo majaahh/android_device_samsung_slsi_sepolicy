@@ -3,9 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# ExynosHWC
-type hal_vendor_surfaceflinger_hwservice, hwservice_manager_type;
-
 # Fingerprint
 type hal_vendor_fingerprint_hwservice, hwservice_manager_type;
 
