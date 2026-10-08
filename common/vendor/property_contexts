@@ -13,6 +13,7 @@ vendor.gnss.                              u:object_r:vendor_gnss_prop:s0
 # HWC
 persist.vendor.display.                   u:object_r:vendor_hwc_prop:s0
 vendor.display.                           u:object_r:vendor_hwc_prop:s0
+vendor.hwc.                               u:object_r:vendor_hwc_prop:s0
 
 # RIL
 persist.vendor.cbd.                       u:object_r:vendor_radio_prop:s0
