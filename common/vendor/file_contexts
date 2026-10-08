@@ -7,6 +7,10 @@
 /dev/scsc_h4_0                                                                                 u:object_r:bt_device:s0
 /dev/ttySAC[0-9]                                                                               u:object_r:bt_device:s0
 
+# Block
+/sys/devices/platform/(.*)/block/sda/queue/discard_max_bytes                                   u:object_r:sysfs_block_writable:s0
+/sys/devices/platform/(.*)/block/sda/stat                                                      u:object_r:sysfs_block:s0
+
 # Camera
 /dev/caminfo                                                                                   u:object_r:camera_device:s0
 /dev/dma_heap/camera                                                                           u:object_r:dmabuf_camera_heap_device:s0
