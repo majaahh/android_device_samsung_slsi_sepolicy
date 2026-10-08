@@ -43,6 +43,9 @@ genfscon sysfs /devices/platform/panel_drv_0/backlight/panel/max_brightness     
 genfscon sysfs /devices/platform/panel_drv_0/lcd/panel                                                                        u:object_r:sysfs_lcd_writable:s0
 genfscon sysfs /devices/virtual/lcd/panel                                                                                     u:object_r:sysfs_lcd_writable:s0
 
+# Display - DQE
+genfscon sysfs /devices/virtual/dqe/dqe/xml                                                                                   u:object_r:sysfs_dqe:s0
+
 # Fingerprint
 genfscon sysfs /class/fingerprint/fingerprint                                                                                 u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/virtual/fingerprint/fingerprint                                                                       u:object_r:sysfs_fingerprint:s0
