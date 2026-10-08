@@ -7,16 +7,24 @@ type gpsd, domain, netdomain;
 type gpsd_exec, exec_type, vendor_file_type, file_type;
 
 allow gpsd fwk_sensor_hwservice:hwservice_manager { find };
+allow gpsd gps_device:chr_file rw_file_perms;
+allow gpsd gpsd_exec:file execute_no_trans;
+allow gpsd hal_system_suspend_service:service_manager find;
 allow gpsd node:{ tcp_socket udp_socket } node_bind;
 allow gpsd port:tcp_socket { name_bind name_connect };
 allow gpsd port:udp_socket name_bind;
 allow gpsd rild:unix_stream_socket connectto;
+allow gpsd self:capability2 block_suspend;
 allow gpsd self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 allow gpsd self:{ tcp_socket udp_socket } create_stream_socket_perms;
+allow gpsd sysfs_sec_gps:file r_file_perms;
 allow gpsd system_suspend_hwservice:hwservice_manager { find };
+binder_call(gpsd, servicemanager)
 binder_call(gpsd, system_server)
 binder_call(gpsd, system_suspend_server)
 binder_call(system_server, gpsd)
+dontaudit gpsd radio_prop:file { getattr map open read };
+get_prop(gpsd, bootanim_system_prop);
 get_prop(gpsd, exported_config_prop)
 get_prop(gpsd, hwservicemanager_prop)
 get_prop(gpsd, telephony_config_prop)
@@ -24,6 +32,7 @@ get_prop(gpsd, vendor_radio_prop)
 hwbinder_use(gpsd)
 init_daemon_domain(gpsd)
 set_prop(gpsd, vendor_gnss_prop)
+wakelock_use(gpsd)
 
 # /acct/tasks
 allow gpsd cgroup:file getattr;

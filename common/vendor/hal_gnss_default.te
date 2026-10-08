@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+allow hal_gnss_default fwk_sensor_service:service_manager find;
+allow hal_gnss_default gpsd:unix_stream_socket connectto;
+
 # cgroups tasks
 allow hal_gnss_default cgroup:file getattr;
 

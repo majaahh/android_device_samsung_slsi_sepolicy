@@ -8,6 +8,7 @@ type dit_device, dev_type;
 
 # GNSS
 type bbd_device, dev_type;
+type gps_device, dev_type;
 
 # Fingerprint
 type fp_sensor_device, dev_type;

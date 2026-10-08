@@ -38,6 +38,8 @@ genfscon sysfs /devices/virtual/fingerprint/fingerprint                         
 # GNSS
 genfscon sysfs /bbd                                                                                                           u:object_r:sysfs_bbd:s0
 genfscon sysfs /class/sec/gps                                                                                                 u:object_r:sysfs_sec_gps:s0
+genfscon sysfs /devices/soc0/machine                                                                                          u:object_r:sysfs_sec_gps:s0
+genfscon sysfs /devices/soc0/revision                                                                                         u:object_r:sysfs_sec_gps:s0
 genfscon sysfs /devices/virtual/sec/gps                                                                                       u:object_r:sysfs_sec_gps:s0
 
 # IIO
