@@ -220,6 +220,9 @@
 /vendor/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@[0-9].[0-9]-service                   u:object_r:hal_vendor_eden_runtime_default_exec:s0
 /vendor/bin/hw/vendor.samsung_slsi.hardware.tetheroffload@[0-9].[0-9]-service                  u:object_r:hal_tetheroffload_default_exec:s0
 
+# Video4Linux
+/sys/devices/platform/(.*)/video4linux/video[0-9]+/name                                        u:object_r:sysfs_v4l:s0
+
 # Wakeup
 /sys/devices/platform/(.*)/wakeup[0-9]*(/.*)?                                                  u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/sec/tsp/wakeup[0-9]+(/.*)?                                                u:object_r:sysfs_wakeup:s0
